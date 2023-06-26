@@ -1,0 +1,14 @@
+seaborn
+scikit-learn
+transformers
+torch 
+torchvision
+numpy
+tokenizers
+datasets
+evaluate
+jupyterlab
+matplotlib
+sacrebleu
+tqdm
+
