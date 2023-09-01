@@ -116,11 +116,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+All the experiments were performed using NVIDIA Quadro RTX 5000 GPUs. The proposed TSC model
+is implemented with PyTorch. We adopt the SGD with momentum optimizer during the training of the model parameters. The learning rate is set to 0.01. The experiments for all the models are
+obtained by running 16 epochs with the mini-batch size 32. The development set is used to select the best model.
 
 ### Installation
 
