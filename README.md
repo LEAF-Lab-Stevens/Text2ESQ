@@ -15,9 +15,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
   <h3 align="center">Text-to-ESQ</h3>
 
@@ -56,7 +53,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 The Vaccine Adverse Event Reporting System (VAERS) contains
 detailed reports of adverse events following vaccine administration.
@@ -97,14 +93,16 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgments section. Here are a few examples.
+All the experiments were performed using NVIDIA Quadro RTX 5000 GPUs. The proposed TSC model
+is implemented with PyTorch. We adopt the SGD with momentum optimizer during the training of the model parameters. The learning rate is set to 0.01. The experiments for all the models are
+obtained by running 16 epochs with the mini-batch size 32. The development set is used to select the best model.
 
-* Pandas
-* Sklearn
-* Pandas
-* pytorch
-* Pandas
-* 
+* M2M
+* Bart
+* LSTM
+* RoBERTa
+* DistilBERT
+* RoBERTa+Bi-LSTM
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,16 +175,26 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Our major contributions can be summarized as follows
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+1. Formally propose and formulate the Text-to-ESQ task to support
+NLQ on NoSQL database. To the best of our knowledge, this is
+the initial comprehensive investigation of NLQ on the NoSQL
+database
+2. Propose a two-stage controllable (TSC) framework consisting of
+two modules for Text-to-ESQ: (1) Question-to-question transla-
+tion module for translating natural language questions into the
+corresponding template questions, and (2) ESQ condition extrac-
+tion module for parsing name entities about condition fields and
+values from template questions for further populating the query
+templates
+3. Create a large-scale dataset VAERSESQ for Text-to-ESQ task for
+retrieving information from VAERS data. For each question, we
+include both template-based and natural language forms
+4. Conduct an extensive experimental analysis of the VAERSESQ
+dataset and demonstrate the effectiveness of the proposed two-
+stage controllable method
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,10 +211,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
+Ping Wang -  pwang44@stevens.edu​
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Wenlong Zhang -  wzhang71@stevens.edu
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: (https://github.com/LEAF-Lab-Stevens/Text2ESQ​)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
