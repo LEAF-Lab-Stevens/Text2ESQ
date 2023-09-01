@@ -1,14 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<!-- Improved compatibility of back to top link: See: [https://github.com/othneildrew/Best-README-Template/pull/73](https://github.com/LEAF-Lab-Stevens/Text2ESQ/edit/main) -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -18,12 +9,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -34,20 +19,8 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Text-to-ESQ</h3>
 
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
 </div>
 
 
@@ -85,14 +58,36 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+The Vaccine Adverse Event Reporting System (VAERS) contains
+detailed reports of adverse events following vaccine administration.
+However, efficiently and accurately searching for specific infor-
+mation from VAERS poses significant challenges, especially for
+medical experts. Natural language querying (NLQ) methods tackle
+the challenge by translating the input questions into executable
+queries, allowing for the exploration of complex databases with
+large amounts of information. Most existing studies focus on the
+relational database and solve the Text-to-SQL task. However, the
+capability of full-text for Text-to-SQL is greatly limited by the data
+structures and functionality of the SQL databases. In addition, the
+potential of natural language querying has not been comprehen-
+sively explored in the healthcare domain. To overcome these limita-
+tions, we investigate the potential of NoSQL databases, specifically
+Elasticsearch, and forge a new research direction for NLQ, which
+we refer to as Text-to-ESQ generation. This exploration requires
+us to re-design various aspects of NLQ, such as the target applica-
+tion and the advantages of NoSQL database. In our approach, we
+develop a two-stage controllable (TSC) framework consisting of
+a question-to-question (Q2Q) translation module and an ESQ
+condition extraction (ECE) module. These modules are carefully
+designed to efficiently retrieve information from the VEARS data
+stored in a NoSQL database. Additionally, we construct a dedicated
+question-ESQ pair dataset called VAERSESQ, to support the task
+in the healthcare domain. Extensive experiments were conducted
+on the VAERSESQ dataset to evaluate the proposed methods. The
+results, both quantitative and qualitative, demonstrate the accuracy
+and efficiency of our approach in generating queries for NoSQL
+databases, thus enabling efficient retrieval of VEARS data.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
 Use the `BLANK_README.md` to get started.
 
@@ -102,16 +97,11 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgments section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
+* 
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
