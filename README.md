@@ -7,7 +7,7 @@
 - This repository is a two-stage controllable approach for efficient retrieval of Vaccine Adverse Events from the NoSQL database proposed in our ACMBCB'2023 paper:
 [Text-to-ESQ: A Two-Stage Controllable Approach for Efficient Retrieval of Vaccine Adverse Events from NoSQL Database](https://dl.acm.org/doi/10.1145/3584371.3613008). 
 
-- In this work, we are also releasing a large-scale VAERSESQ Dataset for Question-to-ESQ generation tasks in the healthcare domain. The VAERSESQ dataset is provided in [VAERSESQ dataset](https://github.com/LEAF-Lab-Stevens/Text2ESQ) in this repository. More details about VAERSESQ dataset are provided below.
+- In this work, we also release a large-scale VAERSESQ Dataset for Question-to-ESQ generation tasks in the healthcare domain. The VAERSESQ dataset is provided in [VAERSESQ dataset](https://github.com/LEAF-Lab-Stevens/Text2ESQ) in this repository. More details about VAERSESQ dataset are provided below.
 
 - Links related to this work:
   - Paper: https://dl.acm.org/doi/10.1145/3584371.3613008
