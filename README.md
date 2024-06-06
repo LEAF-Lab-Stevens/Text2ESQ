@@ -80,9 +80,8 @@ The codes for evaluation are provided in folder ```evaluation```. You can follow
 ## Results
 
 Here we provide the results on the dataset.
-![image](https://github.com/LEAF-Lab-Stevens/Text2ESQ/blob/WenlongZhang/Results.png))
 
-
+<img src="https://github.com/LEAF-Lab-Stevens/Text2ESQ/blob/WenlongZhang/Results.png" width="500px">
 
 <!-- Improved compatibility of back to top link: See: [https://github.com/othneildrew/Best-README-Template/pull/73](https://github.com/LEAF-Lab-Stevens/Text2ESQ/edit/main) -->
 <a name="readme-top"></a>
