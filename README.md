@@ -51,25 +51,13 @@ information provided in the VAERS data and people’s interests in vaccine adver
 
 - ```Example:``` Here we provide a data sample in MIMICSQL to illustrate the meaning of each element.
 
-![image](https://github.com/LEAF-Lab-Stevens/Text2ESQ/blob/WenlongZhang/QuestionSearchQuery.png))
+<img src="https://github.com/LEAF-Lab-Stevens/Text2ESQ/blob/WenlongZhang/QuestionSearchQuery.png" width="500px">
 
-The meaning of each elements are as follows:
-- `key`: a unique ID of each data sample. You can make correspondence between the template question and natural language question using this ID.
-- `question_refine`: the machine genrated template question (in `mimicsql_template` folder) or natural language question (in `mimicsql_natural` folder) annotated by [Freelancers](https://www.freelancer.com/). You can make correspondence between template question and natural language questions using `key` of each data sample.
-- `question_refine_tok`: the tokenized question. The content is ignored here. You can find details in the dataset.
-- `sql`: the SQL query corresponding to the question.
-- `sql_tok`: the tokenized SQL query. The content is ignored here. You can find details in the dataset.
-- `format`: the logical format of SQL query, which is inspired by the logical format used in [WikiSQL](https://github.com/salesforce/WikiSQL). It includes the following sub-elements:
-  - `table`: a list of numerical index of tables that are related to the question.
-  - `cond`: a list of `[talble_index, condition_column_index, condition_operation_index, condition_value]`, where:
-    - `table_index`: the numerical index of table that is related to this condition column.
-    - `condition_column_index`: the numerical index of column that is used for this condition.
-    - `condition_operation_index`: the numerical index of condition operation. Here is the dictionary `{'=': 0, '>': 1, '<': 2, '>=': 3, '<=': 4}`.
-    - `condition_value`: the value for the condition. 
-  - `agg_col`: a list of `[talble_index, aggreation_column_index]`.
-    - `table_index`: the numerical index of table that is related to this aggregation column.
-    - `column_index`: the numerical index of column that is used for aggregation.
-  - `sel`: the numerical index of aggregation operation used in the SQL query. Here is the dictionary `{'': 0, 'count': 1, 'max': 2, 'min': 3, 'avg': 4}`.
+An example from VAERSESQ data. Colors show the correspondence between various components in the question template, NL/template questions, and query template.:
+- `track_total _hits`: the query will retrieve all the relevant records.
+- `field`: a specific field to search, which takes variables provided in the “params” section to query.
+- `params`: provided variables section to query.
+- `query`and `fuzziness`: designed for specific options to improve retrieval accuracy.
 
 ## Usage
 
