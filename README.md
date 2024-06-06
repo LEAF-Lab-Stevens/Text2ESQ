@@ -12,7 +12,7 @@
 - Links related to this work:
   - Paper: https://dl.acm.org/doi/10.1145/3584371.3613008
   - Dataset and codes: https://github.com/LEAF-Lab-Stevens/Text2ESQ
-  - Slides: https://github.com/wangpinggl/TREQS/blob/master/TREQS.pdf
+  - Slides: https://github.com/LEAF-Lab-Stevens/Text2ESQ/blob/WenlongZhang/Text-to-ESQ.pdf
   
 - Updates (06/2024): We recently further explored some of the more complex questions and plan to release a new version of natural language questions. 
 
